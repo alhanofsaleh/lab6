@@ -1,0 +1,75 @@
+/* ✅ تصميم جديد للجدول */
+.custom-table {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #2A9D8F;
+}
+
+/* ✅ تغيير تصميم العناوين */
+.custom-table th {
+    background-color: #2A9D8F; /* أخضر أزرق */
+    color: white;
+    padding: 14px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* ✅ تغيير تصميم الخلايا */
+.custom-table td {
+    padding: 12px;
+    background-color: #F1FAEE; /* أبيض فاتح */
+    font-size: 1em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ✅ كل صف زوجي بلون مختلف */
+.custom-table tr:nth-child(even) {
+    background-color: #A8DADC; /* أزرق فاتح */
+}
+
+/* ✅ تأثير عند تمرير الماوس */
+.custom-table tr:hover {
+    background-color: #F4A261; /* برتقالي فاتح */
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* ✅ تحسين الخطوط */
+.custom-table {
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+
+/* ✅ تأثير ثلاثي الأبعاد */
+.custom-table {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* ✅ تحسين الأزرار */
+.button {
+    background-color: #264653;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.button:hover {
+    background-color: #2A9D8F;
+    transform: scale(1.1);
+}
