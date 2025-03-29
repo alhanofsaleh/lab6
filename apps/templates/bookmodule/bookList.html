@@ -1,0 +1,57 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} The Book List {% endblock title %}
+
+{% block stylesheets %}
+<!-- here I'll style the way books will be listed-->
+<style>
+.table-book {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1em;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+.table-book th {
+    background-color: rgb(155, 191, 184);
+    border: 1px solid;
+    padding: 10px;
+}
+
+.table-book td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.table-book tr:hover {
+    background-color: rgb(230, 200, 224);
+}
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<h1 style="text-align:center;">books list  </h1>
+
+<table class="table-book">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Author</th>
+  </tr>
+
+  {% for book in books %}
+    <tr>
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+    </tr>
+  {% empty %}
+    <tr>
+        <td colspan="3">there is no bookss"and"</td>
+    </tr>
+  {% endfor %}
+
+</table>
+{% endblock content %}
